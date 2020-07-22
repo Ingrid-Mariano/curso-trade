@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- A var numero estava recebendo o valor dela mesma e não da var valor.E como o valor dela era indefinido (undefined) e eu tentava passar para inteiro, sempre retornava NaN, não importando o que fosse atribuido a valor. -->
+    <script>
+        var valor = prompt('Digite um numero');
+        var numero  = parseInt(valor);
+        
+        if(isNaN(numero)){
+            alert('Você não digitou um numero - ' + valor);
+        } else if(numero%2 != 0){
+            alert('Impar');
+        }else{
+            alert('Par');
+        }
+    </script>   
+</body>
+</html>
